@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Ethan</title>
-<meta name="description" content="Ways to get in touch.">
+<meta name="description" content="Ways to get in touch — for engineering and research, or for DJ bookings.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600&display=swap" rel="stylesheet">
@@ -30,26 +30,64 @@
 </nav>
 
 <div class="page-head">
+  <span class="eyebrow">Get in touch</span>
   <h1>Contact</h1>
-  <p>Email is the most reliable way to reach me. I'm currently looking for a summer 2027 engineering internship.</p>
+  <p>Email is the most reliable way to reach me. I read everything and usually reply within a day or two.</p>
 </div>
 
-<section class="wide">
-  <ul class="contact-list">
-    <li><a href="mailto:you@example.com">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 7 9-7"/></svg>
-      Email</a></li>
-    <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.5 1.5-4.5-2.5-6.5-3M15 21v-3.5c0-1 .3-1.7.8-2.2 3-.3 5.7-1.5 5.7-6.2 0-1.4-.5-2.5-1.3-3.4.1-.4.6-1.7-.1-3.4 0 0-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C7 2 5.9 2.3 5.9 2.3c-.7 1.7-.2 3-.1 3.4-.8.9-1.3 2-1.3 3.4 0 4.7 2.7 5.9 5.7 6.2-.4.4-.7 1-.8 1.8V21"/></svg>
-      GitHub</a></li>
-    <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="2.5"/><path d="M7 10.5V17M7 7.2v.1M11.5 17v-3.8c0-1.3.9-2.2 2.1-2.2s2.1.9 2.1 2.2V17"/></svg>
-      LinkedIn</a></li>
-  </ul>
-  <!-- Swap the three hrefs above for your real email and profile links before deploying.
-       This is a static site, so a working contact form would need a third-party service
-       (Formspree or similar) — a plain email link is the simplest thing that reliably works. -->
-</section>
+<div class="contact-grid">
+  <div>
+    <div class="contact-group">
+      <h2>Engineering, research, and internships</h2>
+      <p>Recruiters, faculty, and anyone with a question about the work on this site.</p>
+      <ul class="contact-list">
+        <li>
+          <div class="copy-row">
+            <span style="display:flex;align-items:center;gap:1rem;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 7 9-7"/></svg>
+              <span><span class="lbl">you@example.com</span><span class="sub">Best for anything professional</span></span>
+            </span>
+            <button class="copy-btn" data-copy="you@example.com">Copy</button>
+          </div>
+        </li>
+        <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="2.5"/><path d="M7 10.5V17M7 7.2v.1M11.5 17v-3.8c0-1.3.9-2.2 2.1-2.2s2.1.9 2.1 2.2V17"/></svg>
+          <span><span class="lbl">LinkedIn</span><span class="sub">Resume, roles, and the public version of all this</span></span></a></li>
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.5 1.5-4.5-2.5-6.5-3M15 21v-3.5c0-1 .3-1.7.8-2.2 3-.3 5.7-1.5 5.7-6.2 0-1.4-.5-2.5-1.3-3.4.1-.4.6-1.7-.1-3.4 0 0-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C7 2 5.9 2.3 5.9 2.3c-.7 1.7-.2 3-.1 3.4-.8.9-1.3 2-1.3 3.4 0 4.7 2.7 5.9 5.7 6.2-.4.4-.7 1-.8 1.8V21"/></svg>
+          <span><span class="lbl">GitHub</span><span class="sub">Code, including this site</span></span></a></li>
+      </ul>
+    </div>
+
+    <div class="contact-group">
+      <h2>DJ bookings</h2>
+      <p>Events around Greater Boston, mostly summers and school breaks.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:you@example.com?subject=DJ%20booking%20inquiry">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+          <span><span class="lbl">Booking inquiry</span><span class="sub">Send the date, venue, and rough headcount</span></span></a></li>
+        <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.1"/></svg>
+          <span><span class="lbl">Instagram</span><span class="sub">Recent events and setups</span></span></a></li>
+      </ul>
+      <!-- Swap in your DJ business email/Instagram, or remove the Instagram item if you don't use one -->
+    </div>
+  </div>
+
+  <aside class="avail">
+    <h3>Right now</h3>
+    <ul>
+      <li class="dot-open"><span>Looking for a <b style="color:var(--text);font-weight:500;">summer 2027 engineering internship</b>, ideally in the Boston / Merrimack Valley area.</span></li>
+      <li class="dot-open"><span>Open to undergraduate research in semiconductor devices at NC State.</span></li>
+      <li class="dot-warm"><span>Taking DJ bookings for summer and school breaks.</span></li>
+      <li class="dot-dim"><span>Based in Raleigh, NC during the school year; Andover, MA otherwise.</span></li>
+    </ul>
+    <span class="mono">Eastern Time. Last updated September 2026.</span>
+  </aside>
+</div>
+
+<!-- Swap you@example.com (appears 3×), yourusername, and yourhandle for your real details before deploying.
+     This is a static site: a working contact form would need a third-party service such as Formspree. -->
 
 <footer class="site-footer">
   <div class="footer-row">
@@ -57,7 +95,7 @@
     <ul class="footer-links">
       <li><a href="https://github.com/yourusername">GitHub</a></li>
       <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
-      <li><a href="mailto:you@example.com">Email</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </div>
 </footer>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leadership | Ethan</title>
-<meta name="description" content="Robotics team leadership, martial arts instruction, STEM curriculum design, and running a DJ business.">
+<meta name="description" content="Robotics team leadership, martial arts instruction, and running a DJ business — three threads, in order.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600&display=swap" rel="stylesheet">
@@ -30,74 +30,134 @@
 </nav>
 
 <div class="page-head">
+  <span class="eyebrow">Three threads</span>
   <h1>Leadership</h1>
-  <p>Leading a team, teaching a skill, and running a business — the same instinct to take ownership, applied in three different places.</p>
+  <p>Leading a team, teaching a skill, and running a business. Each one is a progression, so each is told in order.</p>
 </div>
 
-<div class="timeline">
-  <h2>Four years of competitive robotics</h2>
-  <p style="margin-bottom:2rem;">Two teams, two very different roles: three years learning the engineering side, then a year responsible for the people doing it.</p>
-  <div class="tl-track">
-    <div class="tl-item">
-      <span class="tl-year">Freshman – junior year</span>
-      <h3>ARC Lightning, FTC #4410 — mechanical lead</h3>
-      <p>Three seasons on the engineering side, leading mechanical design on drivetrain and scoring mechanisms. Our junior-year season took us to the FTC World Championship.</p>
-    </div>
-    <div class="tl-item is-current" style="--tl-accent: var(--power);">
-      <span class="tl-year">Senior year</span>
-      <h3>ARC Sandstorm, FTC #24256 — team leader</h3>
-      <p>Moving from mechanical lead to team leader meant the problems stopped being technical. I led the team to a states and NEI finish, ran "ARC Election '26" for team leadership positions using both simple and ranked-choice ballots, and closed the season with a banquet and nature-themed awards.</p>
-      <p>The decision I keep coming back to: I spent time building up newer members' skills instead of routing every hard problem through our most experienced people. Slower, and it probably cost us some ground early on, but it's the only version where the team still works once I've graduated.</p>
-    </div>
+<div class="tabs">
+  <div class="tab-list" role="tablist" aria-label="Leadership threads">
+    <button class="tab tab-robotics" role="tab" data-panel="robotics" aria-selected="true">Robotics</button>
+    <button class="tab tab-karate" role="tab" data-panel="karate" aria-selected="false">Martial arts</button>
+    <button class="tab tab-dj" role="tab" data-panel="dj" aria-selected="false">DJ business</button>
   </div>
 </div>
 
-<div class="entry-group">
-
-  <div class="entry">
-    <div class="thumb">photo</div>
-    <div class="entry-body">
-      <h3>Teaching karate</h3>
-      <div class="spec-strip">
-        <span><b>Rank:</b> Black belt</span>
-        <span><b>Experience:</b> Several years instructing</span>
+<!-- ============ Robotics ============ -->
+<div class="panel" id="robotics" role="tabpanel">
+  <div class="thread">
+    <div class="thread-intro">
+      <h2>Four years of FTC robotics</h2>
+      <p>Two teams, two different jobs: three years learning the engineering side, then a year responsible for the people doing it.</p>
+      <ul class="tag-row">
+        <li><span class="tag" style="--accent:var(--power);--accent-deep:var(--power-deep);--accent-wash:var(--power-wash)">FTC #4410</span></li>
+        <li><span class="tag" style="--accent:var(--power);--accent-deep:var(--power-deep);--accent-wash:var(--power-wash)">FTC #24256</span></li>
+        <li><span class="tag" style="--accent:var(--power);--accent-deep:var(--power-deep);--accent-wash:var(--power-wash)">Worlds</span></li>
+        <li><span class="tag" style="--accent:var(--power);--accent-deep:var(--power-deep);--accent-wash:var(--power-wash)">New England Invitational</span></li>
+      </ul>
+    </div>
+    <div class="tl-track" style="--tl-accent: var(--power);">
+      <div class="tl-item">
+        <span class="tl-year">Freshman – junior year</span>
+        <h3>ARC Lightning — mechanical team, then mechanical lead</h3>
+        <p>Three seasons on an established team, working on the robot's mechanical design and build and growing into the mechanical lead role. Our junior-year robot went to the FTC World Championship — a team result I was one part of.</p>
       </div>
-      <p>I hold a black belt in karate and have taught it for several years, which is where most of my approach to coaching comes from. My job as an instructor isn't really getting a student to copy a technique correctly — it's giving them a way to judge their own form, so they keep improving without me standing over their shoulder. That's the same thing I was trying to do leading Sandstorm.</p>
-      <!-- Personalize: add the age range you teach and a specific teaching moment -->
+      <div class="tl-item is-current">
+        <span class="tl-year">Senior year</span>
+        <h3>ARC Sandstorm — team leader</h3>
+        <p>Moving from mechanical lead to team leader meant the hard problems stopped being technical. I led the team to states and the New England Invitational, ran "ARC Election '26" for team leadership positions using both simple and ranked-choice ballots, and closed the season with a banquet and nature-themed awards.</p>
+        <p>The decision I keep coming back to: spending time building up newer members' skills instead of routing every hard problem through our most experienced people. Slower, and it probably cost us ground early on — but it's the only version where the team still works after I've graduated.</p>
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="entry" id="camp">
-    <div class="thumb">photo</div>
-    <div class="entry-body">
-      <span class="status-tag">Featured work</span>
-      <h3>Designing a STEM curriculum for a martial arts dojo</h3>
-      <div class="spec-strip">
-        <span><b>Format:</b> 4-day summer camp</span>
-        <span><b>Location:</b> Andover, MA</span>
-        <span><b>Status:</b> Delivered</span>
+<!-- ============ Martial arts ============ -->
+<div class="panel" id="karate" role="tabpanel">
+  <div class="thread">
+    <div class="thread-intro">
+      <h2>From student to senior instructor</h2>
+      <p>Karate is where most of my approach to coaching comes from — and where the teaching-meets-engineering project below happened.</p>
+      <ul class="tag-row">
+        <li><span class="tag">Black belt</span></li>
+        <li><span class="tag">Senior instructor</span></li>
+        <li><span class="tag">Curriculum design</span></li>
+      </ul>
+    </div>
+    <div class="tl-track" style="--tl-accent: var(--signal);">
+      <div class="tl-item">
+        <span class="tl-year">Training</span>
+        <h3>Black belt</h3>
+        <p>Years of training at Cervizzi's Martial Arts Academy, through to black belt. The rank matters less to me than what it took to get there — showing up consistently, and getting better at judging my own form without waiting to be corrected.</p>
       </div>
-      <p>I designed and ran a four-day robotics-and-karate summer camp at the dojo where I teach, building the curriculum from scratch: daily lesson plans on solar energy, gears, biomimicry, and the engineering design loop, each with its own slide deck and diagrams I drew myself.</p>
-      <p>Building the lesson material took considerably longer than running the camp did — probably true of teaching in general. It's still the project that best represents how I think about both fields at once.</p>
-      <!-- Personalize: add the age group, how many kids attended, and a specific moment from the week -->
+      <div class="tl-item">
+        <span class="tl-year">Several years</span>
+        <h3>Senior instructor</h3>
+        <p>My job as an instructor isn't really getting a student to copy a technique correctly — it's giving them a way to judge their own form, so they keep improving without me standing over their shoulder. That's the same thing I was trying to do leading Sandstorm.</p>
+        <p>I also handle purchasing for the academy — equipment, inventory, the ordering side of running a dojo — which is a different kind of responsibility than teaching, and one I picked up because someone needed to.</p>
+        <!-- Personalize: add the age range you teach and a specific teaching moment -->
+      </div>
+      <div class="tl-item is-current">
+        <span class="tl-year">Summer camp</span>
+        <h3>Designing a STEM curriculum for the dojo</h3>
+        <p>The one place my two worlds fully overlapped.</p>
+        <div class="tl-feature">
+          <span class="status-tag">Featured work</span>
+          <h4>Four-day robotics-and-karate camp</h4>
+          <p>I designed and ran the camp from scratch: daily lesson plans on solar energy, gears, biomimicry, and the engineering design loop, each with its own slide deck and diagrams I drew myself.</p>
+          <p style="margin-bottom:0;">Building the lesson material took considerably longer than running the camp did — probably true of teaching in general. It's still the project that best represents how I think about both fields at once.</p>
+          <!-- Personalize: age group, how many kids attended, a specific moment from the week -->
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="entry">
-    <div class="thumb">photo</div>
-    <div class="entry-body">
-      <h3>Running a DJ business</h3>
-      <div class="spec-strip">
-        <span><b>Type:</b> Self-employed</span>
-        <span><b>Area:</b> Greater Boston</span>
-        <span><b>Status:</b> Active</span>
+<!-- ============ DJ business ============ -->
+<div class="panel" id="dj" role="tabpanel">
+  <div class="thread">
+    <div class="thread-intro">
+      <h2>Running a business on my own</h2>
+      <p>An event DJ business around Greater Boston. The music is the visible part; most of what I've learned is everything underneath it.</p>
+      <ul class="tag-row">
+        <li><span class="tag" style="--accent:var(--third);--accent-deep:var(--third-deep);--accent-wash:var(--third-wash)">Self-employed</span></li>
+        <li><span class="tag" style="--accent:var(--third);--accent-deep:var(--third-deep);--accent-wash:var(--third-wash)">Greater Boston</span></li>
+        <li><span class="tag" style="--accent:var(--third);--accent-deep:var(--third-deep);--accent-wash:var(--third-wash)">Active</span></li>
+      </ul>
+    </div>
+    <div class="tl-track" style="--tl-accent: var(--third);">
+      <div class="tl-item">
+        <span class="tl-year">Starting out</span>
+        <h3>First events</h3>
+        <p>It started as playing events and figuring out the gear. What it turned into was learning to book, quote, and show up prepared — the part nobody sees from the dance floor.</p>
+        <!-- Personalize: how you actually got started, and a first or memorable gig -->
       </div>
-      <p>I run my own event DJ business around the Greater Boston area — booking clients, managing gigs, and tracking the business itself with a system I built covering income, expenses, mileage, and a dashboard that rolls everything up by year.</p>
-      <p>Most of what I've learned running it has been operational rather than musical: pricing the work properly, and keeping equipment and travel costs from quietly eating a slow month. Same instinct I'd bring to an engineering problem, pointed at a spreadsheet instead of a circuit.</p>
-      <!-- Personalize: add how you got started and a memorable gig -->
+      <div class="tl-item">
+        <span class="tl-year">Building the system</span>
+        <h3>Treating it like a business</h3>
+        <p>I built a tracking system for the whole operation — gigs, income, expenses, mileage, equipment, clients — with a dashboard that rolls everything up by year. Pricing the work properly, and keeping equipment and travel costs from quietly eating a slow month, turned out to be most of the job.</p>
+      </div>
+      <div class="tl-item is-current">
+        <span class="tl-year">Now</span>
+        <h3>Still running it</h3>
+        <p>Active around Greater Boston, mostly over summers and breaks now that I'm in Raleigh during the school year. Same instinct I'd bring to an engineering problem, pointed at a spreadsheet instead of a circuit.</p>
+      </div>
     </div>
   </div>
+</div>
 
+<div class="also">
+  <h2 style="font-size:1.25rem; margin-bottom:1rem;">Also</h2>
+  <div class="also-grid">
+    <div class="also-card">
+      <h4>Cormier Youth Center</h4>
+      <p>Youth services staff — camp counselor, weightlifting coach, building monitor. Paid, hands-on work with kids that predates most of the above.</p>
+    </div>
+    <div class="also-card">
+      <h4>DECA</h4>
+      <p>Competed in the Marketing Communications series — the closest thing I've done to formal business training, and it shows up in how I run the DJ side.</p>
+    </div>
+  </div>
 </div>
 
 <footer class="site-footer">
@@ -106,7 +166,7 @@
     <ul class="footer-links">
       <li><a href="https://github.com/yourusername">GitHub</a></li>
       <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
-      <li><a href="mailto:you@example.com">Email</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </footer>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Engineering | Ethan</title>
-<meta name="description" content="Analog circuit builds, competitive robot design, and semiconductor device research interests.">
+<meta name="description" content="Analog circuit builds, competition robots, software projects, and semiconductor device research interests.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600&display=swap" rel="stylesheet">
@@ -30,75 +30,131 @@
 </nav>
 
 <div class="page-head">
+  <span class="eyebrow">Projects and research</span>
   <h1>Engineering</h1>
-  <p>Hands-on builds and technical coursework, plus the research I'm working to get into.</p>
-  <ul class="tag-row" style="margin-top:1.2rem;">
-    <li><span class="tag">Analog circuits</span></li>
-    <li><span class="tag">Soldering</span></li>
-    <li><span class="tag">Mechanical design</span></li>
-    <li><span class="tag">CAD</span></li>
-    <li><span class="tag">Iterative prototyping</span></li>
-  </ul>
+  <p>Things I've built with a soldering iron, a CAD file, or a text editor — and the research I'm working toward.</p>
 </div>
 
-<div class="entry-group">
-  <h2>Projects</h2>
+<div class="filters">
+  <span class="mono">Show</span>
+  <div class="chip-row">
+    <button class="chip" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" data-filter="hardware" aria-pressed="false">Hardware</button>
+    <button class="chip" data-filter="robotics" aria-pressed="false">Robotics</button>
+    <button class="chip" data-filter="software" aria-pressed="false">Software</button>
+    <button class="chip" data-filter="research" aria-pressed="false">Research</button>
+  </div>
+</div>
 
-  <div class="entry">
+<div class="proj-grid">
+
+  <article class="proj" data-cat="hardware">
     <div class="thumb">photo</div>
-    <!-- Swap the .thumb div for a real <img> once you have photos — see README -->
-    <div class="entry-body">
+    <!-- Swap .thumb for a real <img> once you have photos — see README -->
+    <div class="proj-head">
       <h3>Guitar pedal builds</h3>
-      <div class="spec-strip">
-        <span><b>Role:</b> Designer &amp; builder</span>
-        <span><b>Tools:</b> Perfboard, soldering, circuit design</span>
-        <span><b>Status:</b> Ongoing</span>
-      </div>
-      <p>Pedals are where I first got comfortable with analog circuits outside a textbook. I build from schematics, populate perfboard by hand, and spend most of my time after soldering working out why a circuit isn't behaving the way the diagram says it should. It's taught me more about how transistors and op-amps actually behave under real conditions than any lecture has.</p>
+      <span class="proj-cat cat-hardware">Hardware</span>
     </div>
-  </div>
+    <div class="spec-strip">
+      <span><b>Role:</b> Builder</span>
+      <span><b>Status:</b> Ongoing</span>
+    </div>
+    <p>Pedals are where I first got comfortable with analog circuits outside a textbook. I solder from schematics and spend most of the time afterward working out why a circuit isn't doing what the diagram says it should — which is where the real learning is.</p>
+    <div class="proj-more"><div><div class="proj-more-inner">
+      <p>This is also where guitar and engineering overlap for me. I play electric guitar, and building the effects I use means every design decision has an audible consequence. It's taught me more about how transistors and op-amps behave under real conditions than any lecture so far.</p>
+      <!-- Personalize: name a specific pedal or circuit you built and something that went wrong with it -->
+    </div></div></div>
+    <button class="proj-toggle" aria-expanded="false"><span>More</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+  </article>
 
-  <div class="entry">
+  <article class="proj" data-cat="robotics">
     <div class="thumb">photo</div>
-    <div class="entry-body">
-      <h3>Competition robot design — ARC Lightning</h3>
-      <div class="spec-strip">
-        <span><b>Team:</b> ARC Lightning, FTC #4410</span>
-        <span><b>Role:</b> Mechanical lead</span>
-        <span><b>Peak:</b> FTC World Championship</span>
-      </div>
-      <p>I spent three seasons on ARC Lightning as mechanical lead, responsible for drivetrain and scoring mechanism design within FTC's limits on size, weight, and build time. Our junior-year season took us to the FTC World Championship. Most of the real engineering happened in iteration: build a version, test it against the actual game rules, then rework whatever fails first.</p>
-      <!-- Personalize: naming a specific mechanism you designed, and the trade-off behind it, would make this much stronger -->
+    <div class="proj-head">
+      <h3>ARC Sandstorm competition robot</h3>
+      <span class="proj-cat cat-robotics">Robotics</span>
     </div>
-  </div>
-
-  <div class="entry no-thumb">
-    <div class="entry-body">
-      <h3>Coursework</h3>
-      <div class="spec-strip">
-        <span><b>Program:</b> NC State EE, first year</span>
-        <span><b>Status:</b> In progress</span>
-      </div>
-      <p>Still early — this is coursework rather than projects for now. My interest in electrical engineering came out of AP Physics C and the circuit work I was already doing on my own, and as design-heavy labs and embedded projects show up later in the program, this is where they'll land.</p>
+    <div class="spec-strip">
+      <span><b>Team:</b> FTC #24256</span>
+      <span><b>Season:</b> Senior year</span>
+      <span><b>Reached:</b> New England Invitational</span>
     </div>
-  </div>
-</div>
+    <p>Our senior-year robot, built and iterated across a full FTC season. As team leader I was less hands-on with the mechanism than I'd been on my previous team, and more responsible for making sure the build actually converged — scoping what we'd attempt, keeping it testable, and reworking what failed first.</p>
+    <div class="proj-more"><div><div class="proj-more-inner">
+      <p>The robot took us to states and then the New England Invitational. The leadership side of that season — how the team was run — lives on the Leadership page.</p>
+      <!-- Personalize: add a mechanism or design trade-off from the robot itself -->
+    </div></div></div>
+    <button class="proj-toggle" aria-expanded="false"><span>More</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+  </article>
 
-<div class="entry-group" style="padding-bottom:2rem;">
-  <h2>Research</h2>
+  <article class="proj" data-cat="robotics">
+    <div class="thumb">photo</div>
+    <div class="proj-head">
+      <h3>ARC Lightning competition robots</h3>
+      <span class="proj-cat cat-robotics">Robotics</span>
+    </div>
+    <div class="spec-strip">
+      <span><b>Team:</b> FTC #4410</span>
+      <span><b>Seasons:</b> Freshman – junior</span>
+      <span><b>Reached:</b> FTC World Championship</span>
+    </div>
+    <p>Three seasons on the mechanical side of an established team. I contributed to the design and build of each year's robot and moved into the mechanical lead role as I went — though these were team robots, and the credit is shared.</p>
+    <div class="proj-more"><div><div class="proj-more-inner">
+      <p>Our junior-year robot went to the FTC World Championship. What I took from those three years was less any one mechanism than the habit of iterating: build a version, test it against the actual game rules, and rework what fails first.</p>
+    </div></div></div>
+    <button class="proj-toggle" aria-expanded="false"><span>More</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+  </article>
 
-  <div class="entry">
-    <div class="thumb">diagram</div>
-    <div class="entry-body">
-      <span class="status-tag">In progress</span>
+  <article class="proj" data-cat="software">
+    <div class="proj-head">
+      <h3>Fretboard trainer</h3>
+      <span class="proj-cat cat-software">Software</span>
+    </div>
+    <div class="spec-strip">
+      <span><b>Language:</b> Python</span>
+      <span><b>Status:</b> Done</span>
+    </div>
+    <p>A small app for drilling note positions on the guitar neck — built because I wanted one, and because it was a good excuse to write a real program end to end.</p>
+    <div class="proj-more"><div><div class="proj-more-inner">
+      <p>The interesting part wasn't the code so much as the design question: how do you quiz someone on a two-dimensional layout in a way that actually builds intuition rather than memorization?</p>
+      <!-- Personalize: link to the repo if it's on GitHub -->
+    </div></div></div>
+    <button class="proj-toggle" aria-expanded="false"><span>More</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+  </article>
+
+  <article class="proj" data-cat="software">
+    <div class="proj-head">
+      <h3>Guitar type personality quiz</h3>
+      <span class="proj-cat cat-software">Software</span>
+    </div>
+    <div class="spec-strip">
+      <span><b>Language:</b> Java</span>
+      <span><b>Status:</b> Done</span>
+    </div>
+    <p>A branching quiz that matches the person taking it to a style of guitar. Not a serious tool — it was a way to get comfortable with Java's structure and control flow while making something with a bit of personality.</p>
+    <div class="proj-more"><div><div class="proj-more-inner">
+      <!-- Personalize: link to the repo, or a sentence on what you'd change now -->
+      <p>If you're curious, it's a decent snapshot of what "learning a language by building something you'd actually use" looked like for me.</p>
+    </div></div></div>
+    <button class="proj-toggle" aria-expanded="false"><span>More</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+  </article>
+
+  <article class="proj" data-cat="research">
+    <div class="proj-head">
       <h3>Semiconductor device research</h3>
-      <div class="spec-strip">
-        <span><b>Interest:</b> SiC / GaN &amp; silicon devices</span>
-        <span><b>Department:</b> NC State ECE</span>
-      </div>
-      <p>I'm working to get involved in wide-bandgap and silicon device research within NC State's Electrical and Computer Engineering department, which plays a central role in the CHIPS-funded CLAWS Microelectronics Commons Hub and in PowerAmerica. Power devices are the part of EE I find most interesting right now — small design decisions with direct, measurable physical consequences. This entry becomes a real project writeup once that work starts.</p>
+      <span class="proj-cat cat-research">Research</span>
     </div>
-  </div>
+    <div class="spec-strip">
+      <span><b>Interest:</b> SiC / GaN &amp; silicon devices</span>
+      <span><b>Where:</b> NC State ECE</span>
+      <span><b>Status:</b> Working toward</span>
+    </div>
+    <p>I'm working to get involved in wide-bandgap and silicon device research within NC State's ECE department, which plays a central role in the CHIPS-funded CLAWS Microelectronics Commons Hub and in PowerAmerica.</p>
+    <div class="proj-more"><div><div class="proj-more-inner">
+      <p>Power devices are the corner of EE I find most interesting right now: a small change in a device's design has a direct, physical consequence you can measure. This card turns into a real writeup once the work starts.</p>
+    </div></div></div>
+    <button class="proj-toggle" aria-expanded="false"><span>More</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+  </article>
+
 </div>
 
 <footer class="site-footer">
@@ -107,7 +163,7 @@
     <ul class="footer-links">
       <li><a href="https://github.com/yourusername">GitHub</a></li>
       <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
-      <li><a href="mailto:you@example.com">Email</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </footer>

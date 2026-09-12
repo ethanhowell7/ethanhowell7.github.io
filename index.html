@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ethan Howell | Electrical engineering, robotics, and teaching</title>
+<title>Ethan | Electrical engineering, robotics, and teaching</title>
 <meta name="description" content="Portfolio of engineering projects, robotics leadership, and teaching by Ethan, an electrical engineering student at NC State University.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
   <div class="nav-row">
     <a class="brand" href="index.html">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h4l3-7 4 14 3-7h6"/></svg>
-      Ethan Howell
+      Ethan
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
     <ul class="nav-links">
@@ -40,54 +40,85 @@
     </div>
   </div>
 
-  <div class="scope" aria-hidden="true">
-    <svg viewBox="0 0 340 190" xmlns="http://www.w3.org/2000/svg">
-      <path class="trace" d="M4 150 L44 150 L44 44 L104 44 L104 150 L164 150 L164 44 L224 44 L224 150 L284 150 L284 44 L336 44"/>
-      <path class="trace trace-2" d="M4 118 Q34 118 44 96 Q54 74 84 74 Q114 74 124 108 Q134 142 164 142 Q194 142 204 104 Q214 66 244 66 Q274 66 284 112 Q294 158 336 158"/>
-    </svg>
-    <div class="scope-readout">
-      <div>Focus<b>Power devices</b></div>
-      <div>Class<b>2030</b></div>
-      <div>Based<b>Raleigh, NC</b></div>
+  <div>
+    <div class="scope" aria-label="Interactive oscilloscope. Move your cursor over it to change the signal.">
+      <svg viewBox="0 0 340 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="trace ch1" d=""/>
+        <path class="trace ch2" d=""/>
+      </svg>
+      <div class="scope-bar">
+        <div class="scope-readout">
+          <div>Freq<b data-f>1.5 kHz</b></div>
+          <div>Amplitude<b data-a>2.00 V</b></div>
+        </div>
+        <div class="scope-ch">
+          <button class="ch-btn ch1" data-ch="ch1" aria-pressed="true">CH1</button>
+          <button class="ch-btn ch2" data-ch="ch2" aria-pressed="true">CH2</button>
+        </div>
+      </div>
     </div>
+    <div class="scope-hint">move your cursor over the scope</div>
   </div>
 </header>
 
-<section class="pillars">
+<div class="now-strip">
+  <div class="now-grid">
+    <div class="now-cell"><span class="mono">Currently</span><b>First semester at NC State, 18 credits</b></div>
+    <div class="now-cell"><span class="mono">Looking for</span><b>Summer 2027 engineering internship</b></div>
+    <div class="now-cell"><span class="mono">Working toward</span><b>Semiconductor device research</b></div>
+  </div>
+</div>
+
+<section class="pillars" style="padding-top:0;">
   <a class="pillar pillar-eng" href="engineering.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="8" y="8" width="8" height="8" rx="1"/>
-      <path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l3 3M19 5l-3 3M5 19l3-3M19 19l-3-3"/>
-    </svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="8" height="8" rx="1"/><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l3 3M19 5l-3 3M5 19l3-3M19 19l-3-3"/></svg>
     <h3>Engineering</h3>
-    <p>Analog circuit builds, competitive robot design, and the semiconductor research I'm working toward.</p>
+    <p>Analog circuit builds, two competition robots, a couple of software projects, and the research I'm working toward.</p>
   </a>
   <a class="pillar pillar-lead" href="leadership.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <circle cx="12" cy="7" r="3.2"/>
-      <path d="M4.5 20c0-3.6 3.4-6 7.5-6s7.5 2.4 7.5 6"/>
-      <path d="M18.5 4.5 L21 7 L18.5 9.5"/>
-    </svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3.2"/><path d="M4.5 20c0-3.6 3.4-6 7.5-6s7.5 2.4 7.5 6"/><path d="M18.5 4.5 21 7l-2.5 2.5"/></svg>
     <h3>Leadership</h3>
-    <p>Leading a robotics team, teaching karate, and running a business — the initiative side of the work.</p>
+    <p>Leading a robotics team, teaching karate, and running a business — three threads, told in order.</p>
   </a>
   <a class="pillar pillar-about" href="about.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M12 3l2.6 5.8 6.4.7-4.8 4.3 1.3 6.2L12 17l-5.5 3 1.3-6.2L3 9.5l6.4-.7z"/>
-    </svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
     <h3>About</h3>
-    <p>Background, the principles I make decisions by, and my resume.</p>
+    <p>Where I'm from, how I work, what I'm doing right now, and how to get a resume.</p>
   </a>
 </section>
+
+<div class="work-list">
+  <h2>Selected work</h2>
+  <a class="work-row" href="leadership.html#karate">
+    <h4>Robotics-and-karate summer camp</h4>
+    <p>Four-day STEM curriculum designed and delivered at the dojo where I teach.</p>
+    <span class="mono">Teaching</span>
+  </a>
+  <a class="work-row" href="leadership.html#robotics">
+    <h4>Leading ARC Sandstorm</h4>
+    <p>Team leader, senior year. States and the New England Invitational.</p>
+    <span class="mono">Robotics</span>
+  </a>
+  <a class="work-row" href="engineering.html">
+    <h4>Guitar pedal builds</h4>
+    <p>Analog effects circuits, soldered from schematics and debugged by ear and by meter.</p>
+    <span class="mono">Hardware</span>
+  </a>
+  <a class="work-row" href="engineering.html">
+    <h4>Fretboard trainer</h4>
+    <p>A Python app for learning notes on the guitar neck.</p>
+    <span class="mono">Software</span>
+  </a>
+</div>
 
 <section class="feature" style="padding-top:0;">
   <div class="feature-panel">
     <div>
       <span class="status-tag">Featured work</span>
       <h3>Designing a STEM curriculum for a martial arts dojo</h3>
-      <p>A four-day robotics-and-karate summer camp I built from scratch — daily lesson plans on solar energy, gears, biomimicry, and the engineering design loop, each with diagrams I drew myself. The project that best shows how I think about teaching.</p>
+      <p>Solar energy, gears, biomimicry, and the engineering design loop — one topic a day, each with its own lesson deck and diagrams I drew myself. The project that best shows how I think about teaching.</p>
     </div>
-    <a class="btn btn-ghost" href="leadership.html#camp">Read the case study</a>
+    <a class="btn btn-ghost" href="leadership.html#karate">Read the case study</a>
   </div>
 </section>
 
@@ -97,7 +128,7 @@
     <ul class="footer-links">
       <li><a href="https://github.com/yourusername">GitHub</a></li>
       <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
-      <li><a href="mailto:you@example.com">Email</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </footer>
