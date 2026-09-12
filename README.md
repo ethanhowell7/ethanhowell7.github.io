@@ -8,7 +8,7 @@ so it runs on GitHub Pages exactly as-is.
 ```
 index.html          Home — interactive oscilloscope, now strip, pillars, selected work
 engineering.html    Projects with live category filters and expandable cards
-leadership.html     Three tabbed threads (robotics, martial arts, DJ), each a timeline
+leadership.html     Five tabbed threads (robotics, martial arts, youth center, NHS, DJ), each a timeline
 about.html          Bio, "how I work", off the clock, resume on request
 contact.html        Grouped contact channels, copy-email button, availability panel
 404.html            Custom not-found page (GitHub Pages picks it up automatically)
@@ -30,6 +30,10 @@ All the copy is written and ready to publish. What still needs your input:
 - **Resume** — currently "request by email" plus LinkedIn. If you'd rather host a
   PDF, there's a commented-out download button in about.html; strip your phone
   number and street address from that version first.
+- **Early work** — the first science-fair app is titled `[App name]` until you
+  remember what it was called. That one is visible on the page, so fix it first.
+- **Youth center order** — the four Cormier roles are in a guessed order; reorder
+  them in leadership.html to match reality (comment marks the spot).
 - A few `<!-- Personalize: ... -->` comments mark where a specific story of yours
   would make a section stronger. They never show on the live site.
 

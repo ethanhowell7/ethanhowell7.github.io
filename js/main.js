@@ -104,6 +104,9 @@ document.addEventListener('DOMContentLoaded', function () {
       projs.forEach(function (p) {
         p.classList.toggle('hide', !(f === 'all' || p.dataset.cat === f));
       });
+      document.querySelectorAll('.proj-section').forEach(function (sec) {
+        sec.classList.toggle('hide', !sec.querySelector('.proj:not(.hide)'));
+      });
     });
   });
   document.querySelectorAll('.proj-toggle').forEach(function (b) {
