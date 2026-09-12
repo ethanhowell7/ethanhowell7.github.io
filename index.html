@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ethan | Electrical engineering, robotics, and teaching</title>
-<meta name="description" content="Portfolio of engineering projects, robotics mentorship, and teaching by Ethan, an electrical engineering student at NC State University.">
+<meta name="description" content="Portfolio of engineering projects, robotics leadership, and teaching by Ethan, an electrical engineering student at NC State University.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
@@ -16,7 +16,7 @@
 <nav class="site-nav">
   <div class="nav-row">
     <a class="brand" href="index.html">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 6v20M6 16h20" stroke="currentColor" stroke-width="1.2"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h4l3-7 4 14 3-7h6"/></svg>
       Ethan
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
@@ -29,69 +29,71 @@
   </div>
 </nav>
 
-<section class="hero">
+<header class="hero">
   <div>
+    <span class="eyebrow">NC State University — Electrical Engineering</span>
     <h1>Building things, and teaching people to build them.</h1>
-    <p class="lede">I'm Ethan, a first-year electrical engineering student at NC State University's University Honors Program. Outside of class, I founded a robotics team, teach martial arts, and run a DJ business — this site is where that work lives.</p>
-    <p><a class="btn" href="engineering.html">See engineering work</a></p>
+    <p class="lede">I'm Ethan, a first-year electrical engineering student in NC State's University Honors Program. Four years of competitive robotics, a black belt I teach from, and a DJ business I run myself — this is where that work lives.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="engineering.html">See engineering work</a>
+      <a class="btn btn-ghost" href="about.html">About me</a>
+    </div>
   </div>
-  <div class="spec-panel">
-    <h2>ethan.spec</h2>
-    <dl style="margin:0;">
-      <div class="spec-row"><dt>Program</dt><dd>Electrical engineering</dd></div>
-      <div class="spec-row"><dt>School</dt><dd>NC State University</dd></div>
-      <div class="spec-row"><dt>Track</dt><dd>University Honors</dd></div>
-      <div class="spec-row"><dt>Focus</dt><dd>Power &amp; semiconductor devices</dd></div>
-      <div class="spec-row"><dt>Based</dt><dd>Raleigh, NC / Andover, MA</dd></div>
-    </dl>
+
+  <div class="scope" aria-hidden="true">
+    <svg viewBox="0 0 340 190" xmlns="http://www.w3.org/2000/svg">
+      <path class="trace" d="M4 150 L44 150 L44 44 L104 44 L104 150 L164 150 L164 44 L224 44 L224 150 L284 150 L284 44 L336 44"/>
+      <path class="trace trace-2" d="M4 118 Q34 118 44 96 Q54 74 84 74 Q114 74 124 108 Q134 142 164 142 Q194 142 204 104 Q214 66 244 66 Q274 66 284 112 Q294 158 336 158"/>
+    </svg>
+    <div class="scope-readout">
+      <div>Focus<b>Power devices</b></div>
+      <div>Class<b>2030</b></div>
+      <div>Based<b>Raleigh, NC</b></div>
+    </div>
   </div>
-</section>
+</header>
 
 <section class="pillars">
-  <a class="pillar" href="engineering.html">
-    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M6 14h10v-6h10v12h10v14h6"/>
-      <circle cx="16" cy="8" r="1.6" fill="currentColor" stroke="none"/>
-      <circle cx="26" cy="20" r="1.6" fill="currentColor" stroke="none"/>
-      <circle cx="36" cy="34" r="1.6" fill="currentColor" stroke="none"/>
+  <a class="pillar pillar-eng" href="engineering.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="8" y="8" width="8" height="8" rx="1"/>
+      <path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l3 3M19 5l-3 3M5 19l3-3M19 19l-3-3"/>
     </svg>
     <h3>Engineering</h3>
-    <p>Circuit builds, robotics systems, and coursework — plus where the semiconductor research will land once it starts.</p>
+    <p>Analog circuit builds, competitive robot design, and the semiconductor research I'm working toward.</p>
   </a>
-  <a class="pillar" href="leadership.html">
-    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M4 20h14"/>
-      <path d="M30 20h14"/>
-      <path d="M18 20c0-5 5-8 6-8s6 3 6 8-5 8-6 8-6-3-6-8z"/>
-      <path d="M18 28l-4 8"/>
-      <path d="M30 28l4 8"/>
+  <a class="pillar pillar-lead" href="leadership.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="7" r="3.2"/>
+      <path d="M4.5 20c0-3.6 3.4-6 7.5-6s7.5 2.4 7.5 6"/>
+      <path d="M18.5 4.5 L21 7 L18.5 9.5"/>
     </svg>
     <h3>Leadership</h3>
-    <p>Founding a robotics team, teaching karate, and running a DJ business — the initiative side of the work.</p>
+    <p>Leading a robotics team, teaching karate, and running a business — the initiative side of the work.</p>
   </a>
-  <a class="pillar" href="about.html">
-    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true">
-      <path d="M24 4l5.4 12.2L42 17.8l-9.6 8.8L34.8 44 24 36.6 13.2 44l2.4-17.4L6 17.8l12.6-1.6L24 4z"/>
+  <a class="pillar pillar-about" href="about.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 3l2.6 5.8 6.4.7-4.8 4.3 1.3 6.2L12 17l-5.5 3 1.3-6.2L3 9.5l6.4-.7z"/>
     </svg>
     <h3>About</h3>
-    <p>Background, the principles I make decisions by, and where to find my resume.</p>
+    <p>Background, the principles I make decisions by, and my resume.</p>
   </a>
 </section>
 
-<section class="feature">
+<section class="feature" style="padding-top:0;">
   <div class="feature-panel">
     <div>
-      <span class="status-tag">Featured</span>
+      <span class="status-tag">Featured work</span>
       <h3>Designing a STEM curriculum for a martial arts dojo</h3>
-      <p>A four-day robotics-and-karate summer camp I built from scratch — daily lesson plans on solar energy, gears, biomimicry, and the engineering design loop, each with diagrams I drew myself. It's the project that best shows how I actually think about teaching.</p>
+      <p>A four-day robotics-and-karate summer camp I built from scratch — daily lesson plans on solar energy, gears, biomimicry, and the engineering design loop, each with diagrams I drew myself. The project that best shows how I think about teaching.</p>
     </div>
-    <a class="btn cta" href="leadership.html#camp">Read the case study</a>
+    <a class="btn btn-ghost" href="leadership.html#camp">Read the case study</a>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="footer-row">
-    <span>&copy; 2026 Ethan.</span>
+    <span>&copy; 2026 Ethan</span>
     <ul class="footer-links">
       <li><a href="https://github.com/yourusername">GitHub</a></li>
       <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
